@@ -1,0 +1,56 @@
+body{
+    background-color: skyblue;
+}
+#navLinks{
+    display: flex;
+    flex-grow: 1;
+    flex:row wrap;
+    list-style-type: none;
+    margin: 20px;
+}
+#navLinks li a{
+    margin-left: 10px;   
+}
+#navLinks li a:hover{
+    border-bottom: 1px solid green; 
+}
+#technologiesPage{
+    display: flex;
+    flex-grow: 1;
+    flex-direction:row;
+    flex-wrap: wrap; 
+    margin-top:10px; 
+    justify-content: center;
+}
+.dom-items{
+    align-self: stretch; 
+    padding: 2px;    
+    margin:2px;
+    flex-basis: 20%;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+#projectsPage{
+    display: flex;
+    flex-grow: 1;
+    flex-direction:row;
+    flex-wrap: wrap; 
+    margin-top:10px; 
+    justify-content: center;
+}
+.project-items{
+    align-self: stretch; 
+    padding: 2px;    
+    margin:2px;
+    flex-basis: 20%;
+    text-align: left;
+    word-wrap: break-word;
+}
