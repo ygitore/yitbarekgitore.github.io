@@ -1,13 +1,24 @@
 var technologies = ['Html', 'Css','Javascript','Java','C#','Asp.Net','Python','Sql'];
 let printToDom = (divId, stringToPrint)=>{
+    switch(divId){
+        case 'bioPage':
+            document.getElementById('technologiesPage').innerHTML = '';
+            document.getElementById('projectsPage').innerHTML = '';
+        case 'technologiesPage':
+            document.getElementById('bioPage').innerHTML = '';
+            document.getElementById('projectsPage').innerHTML = '';
+        case 'projectsPage':
+            document.getElementById('bioPage').innerHTML = '';
+            document.getElementById('technologiesPage').innerHTML = ''; 
+    }
     document.getElementById(divId).innerHTML = stringToPrint;
 }
-var techBuilder = (arr)=>{
+var techBuilder = (myArr)=>{
     let stringDom = '';
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < myArr.length; i++) {
         stringDom += `<div class="dom-items">
-            <p>${arr[i]}</p>
-        </div>`
+            <p>${myArr[i]}</p>
+        </div>`;
     }
     printToDom('technologiesPage', stringDom);
 }
@@ -24,16 +35,18 @@ const projects = [{
                 available: true,
                 url: "https://github.com/nss-evening-cohort-8/js-part-deux", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
                 githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
-            },{
-                title: "Cool Project", 
+            },
+            {
+                title: "pet-adoption Project", 
                 screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
                 description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
                 technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
                 available: true,
                 url: "https://github.com/nss-evening-cohort-8/js-part-deux", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
                 githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
-            },{
-                title: "Cool Project", 
+            },
+            {
+                title: "pie-Epodium Project", 
                 screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
                 description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
                 technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
@@ -43,9 +56,9 @@ const projects = [{
             }
         ];
 
-let printToDomProjects = (divId, stringToPrint)=>{
-    document.getElementById(divId).innerHTML = stringToPrint;
-}
+// let printToDomProjects = (divId, stringToPrint)=>{
+//     document.getElementById(divId).innerHTML = stringToPrint;
+// }
 var projBuilder = (arr)=>{
     let stringDom = '';
     for (let i = 0; i < arr.length; i++) {
@@ -57,12 +70,19 @@ var projBuilder = (arr)=>{
             <p>${arr[i].githubUrl}</p>
         </div>`
     }
-    printToDomProjects('projectsPage', stringDom);
+    printToDom('projectsPage', stringDom);
 }
 let buttonEventProject = (e)=>{ 
     if(e.target.id === 'navToProjects') {      
         projBuilder(projects);
     }
 }
+let buttonClickEventForBio = ()=>{
+    const myBio = `<p>THis is my bio</p>`;
+    printToDom('bioPage', myBio);
+
+}
+document.getElementById('navToBio').addEventListener('click', buttonClickEventForBio);
+
 document.getElementById('navToProjects').addEventListener('click', buttonEventProject);
 document.getElementById('navToTechnologies').addEventListener('click', buttonEventTechnologies);
