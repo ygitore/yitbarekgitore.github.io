@@ -6,6 +6,8 @@
 }
 body{
     padding-bottom: 10px;
+    position: relative;
+    min-height: calc(100vh-109px);
 }
 #navLinks{
     display: flex;
@@ -112,9 +114,17 @@ i a, em a{
 .page-footer{
     bottom: 0px;
     border-top: 1px solid grey;
-    background-color:rgb(78, 53, 4);
+    background-color:rgb(41, 37, 29);
     position: fixed;
     min-height: 40px;
-    padding:20px;
+    padding:10px;
     min-width: 100vw;
+    z-index: 1;
+}
+main{
+    min-height: calc(100vh-58.67px-85px);
+    padding-bottom: 85px;
+}
+.page-footer a{
+    width: 30px;
 }
