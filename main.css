@@ -15,7 +15,7 @@ body{
     flex:row wrap;
     list-style-type: none;
     justify-content: center;
-    background-color: rgb(78, 53, 4);
+    background-color: rgb(12, 74, 116);
     padding:20px;
 }
 nav ul li a{
@@ -103,21 +103,21 @@ i a, em a{
     text-decoration: none;
 }
 .page-footer img{
-    width:30px;
-    height:30px;
+    width:25px;
+    height:25px;
     text-align: center;
     margin-left: 250px;
     margin-right: auto;
     border-radius: 50%;
-    padding: 2px;
+    padding: 5px;
 }
 .page-footer{
     bottom: 0px;
     border-top: 1px solid grey;
-    background-color:rgb(41, 37, 29);
+    background-color:rgb(12, 74, 116);
     position: fixed;
-    min-height: 40px;
-    padding:10px;
+    min-height: 30px;
+    padding:5px;
     min-width: 100vw;
     z-index: 1;
 }
