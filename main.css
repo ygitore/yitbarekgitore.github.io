@@ -33,16 +33,13 @@ nav ul li a{
     flex-grow: 1;
     flex-direction:row;
     flex-wrap: wrap; 
-    margin-top:10px; 
-    justify-content: center;  
+    margin-top:20px; 
+    justify-content: flex-start;
+    margin-left: 200px;
 }
-.dom-items{
-    align-self: stretch; 
-    padding: 2px;    
-    margin:2px;
-    flex-basis: 20%;
-    text-align: center;
-    word-wrap: break-word;
+.list-of-technologies{
+    flex-basis: 30%;
+    padding: 10px;
 }
 #projectsPage{
     display: flex;
@@ -55,27 +52,49 @@ nav ul li a{
 }
 .project-items{
     align-self: stretch; 
-    padding: 2px;    
     margin-top:20px;
-    flex-basis: 20%;
     text-align: left;
     word-wrap: break-word;
     border: 1px solid rgb(87, 72, 139);
     border-radius: 10px;
     margin:10px;
     padding: 10px;
-    flex-basis: 30%;
+    flex-basis: 40%;
     align-items: flex-start;
 }
 .my-bio{
     margin-top:20px;
-    margin-left:250px;
+    margin-left:200px;
     margin-right:250px;
     line-height: 1.5;
 }
-.project-items p:first-child{
-    font-weight: bold;
-}
-.project-items h4, .descritption{
+.project-title,.descritption,.technologies-used-in-this-proj{
     text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.project-items p img{
+    max-width: 100%;
+    max-height: auto;
+    margin: 0 auto;
+}
+.available{
+    margin-bottom: 15px;
+}
+i a, em a{
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 5px;
+    background-color:#0083ce;
+    color: #fff;
+}
+.view-project,.project-link{
+    margin-bottom: 10px;
+}
+.view-project{
+    margin-right: 20px;
+}
+.project-link a{
+    text-decoration: none;
 }

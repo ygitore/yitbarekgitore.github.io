@@ -16,7 +16,7 @@ let printToDom = (divId, stringToPrint)=>{
 var techBuilder = (myArr)=>{
     let stringDom = '';
     for (let i = 0; i < myArr.length; i++) {
-        stringDom += `<div class="dom-items">
+        stringDom += `<div class="list-of-technologies">
             <p>${myArr[i]}</p>
         </div>`
     }
@@ -29,21 +29,21 @@ let buttonEventTechnologies = (e)=>{
 }
 const projects = [{
                 title: "Temperature Converter", 
-                screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
+                screenshot: "./images/temperatureConverter.png", 
                 description: "This is the program that will convert a temperature from fahrenheit to celsius, or from celsius to fahrenheit.", // A good project description includes 'the what', 'the why', and 'the how'.
                 technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
                 available: true,
-                url: "https://github.com/nss-evening-cohort-8/js-part-deux", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-                githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
+                url: "https://github.com/yitbarekgitore/temperatureConvertor",
+                githubUrl: "https://github.com/yitbarekgitore/temperatureConvertor"
             },
             {
                 title: "Pet-adoption", 
-                screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
-                description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
+                screenshot: "./images/petAdoption.png", 
+                description: "This project is used to filter out the animals from the list of animals based up on user choice.", // A good project description includes 'the what', 'the why', and 'the how'.
                 technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
                 available: true,
-                url: "https://github.com/nss-evening-cohort-8/js-part-deux", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-                githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
+                url: "https://github.com/yitbarekgitore/pet-adoption",
+                githubUrl: "https://github.com/yitbarekgitore/pet-adoption"
             },
             {
                 title: "pie-Epodium Project", 
@@ -56,21 +56,21 @@ const projects = [{
             },
             {
                 title: "Sorting-hat", 
-                screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
-                description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
+                screenshot: "./images/Hoggy.png", 
+                description: "This project is using bootstrap jumbotron to have your sorting hat introduce itself and start the sorting process (by clicking on a button). A bootstrap form will then appear to fill in the student's name and a button to sort. This then assign the student to a random house (Gryffindor, Hufflepuff, Ravenclaw, or Slytherin). On sorting a student, the form should clear and a bootstrap card with the student's name and house should print below the form. You should also be able to expel a student after they have been sorted, which should remove their card from the student record.", // A good project description includes 'the what', 'the why', and 'the how'.
                 technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
                 available: true,
-                url: "https://github.com/nss-evening-cohort-8/js-part-deux", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-                githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
+                url: "https://github.com/yitbarekgitore/sorting-hat", 
+                githubUrl: "https://github.com/yitbarekgitore/sorting-hat"
             },
             {
                 title: "Product-cards", 
-                screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
-                description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
+                screenshot: "./images/productCards.png", 
+                description: "This is the best project", 
                 technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
                 available: true,
-                url: "https://github.com/nss-evening-cohort-8/js-part-deux", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-                githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
+                url: "https://github.com/yitbarekgitore/product-Card", 
+                githubUrl: "https://github.com/yitbarekgitore/product-Card"
             }
         ];
 
@@ -83,14 +83,15 @@ var projBuilder = (arr)=>{
         if(arr[i].available === true)
         {
             stringDom += `<div class="project-items">
-                <h4>${arr[i].title}</h4>
-                <p>${arr[i].screenshot}</p>
+                <h3 class="project-title">${arr[i].title}</h3>
+                <p><img src = '${arr[i].screenshot}'</p>
                 <p class="descritption">Description</p>
                 <p>${arr[i].description}</p>
+                <p class="technologies-used-in-this-proj">Technologies used</p>
                 <p>${arr[i].technologiesUsed}</p>
-                <p>${arr[i].available}</p>
-                <p>${arr[i].url}</p>
-                <p>${arr[i].githubUrl}</p>
+                <p class="available">${arr[i].available}</p>
+                <i class="view-project"><a href = '${arr[i].url}'>View Project</a></i>
+                <em class="project-link"><a href = '${arr[i].githubUrl}'>Project Link</a></em>
             </div>`;
         }
     }
@@ -103,8 +104,8 @@ let buttonEventProject = (e)=>{
 }
 let buttonClickEventForBio = ()=>{
     const myBio = `<div class="my-bio">
-                        <p>My name is Yitbarek Gitore. I am recent computer sciece graduate from Tennessee state university with concentration in cyber security.
-                        My career in cyber security started when i was freshman in college. Most of my career in the past have been in cyber security area. My love for coding hasn\'t been new.</p>
+                        <p>My name is Yitbarek Gitore. I am recent computer sciece graduate from Tennessee state university with concentration in cyber security.<br>I always knew I was going to be web developer. But i have never worked as web developer for any company. Most of my jobs in the past including internships experience were in cyber security.
+                        My love for coding hasn\'t been new. I love handling everthing from front-end develpment(making site prettier) to back-end development to server management. <br>I enjoy learning new things and keep up with changing technologies and overcoming the challenges we have in our day today life through technology.  </p>
                    </div>`;
     printToDom('bioPage', myBio);
 
