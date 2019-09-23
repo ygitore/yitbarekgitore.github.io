@@ -4,6 +4,9 @@
     box-sizing: border-box;
     color: black;
 }
+body{
+    padding-bottom: 10px;
+}
 #navLinks{
     display: flex;
     flex-grow: 1;
@@ -25,8 +28,7 @@ nav ul li a{
     border-bottom: 1px solid goldenrod; 
 }
 .each-col{
-    border:1px solid red;
-
+    border:1px solid grey;
 }
 #technologiesPage{
     display: flex;
@@ -97,4 +99,22 @@ i a, em a{
 }
 .project-link a{
     text-decoration: none;
+}
+.page-footer img{
+    width:30px;
+    height:30px;
+    text-align: center;
+    margin-left: 250px;
+    margin-right: auto;
+    border-radius: 50%;
+    padding: 2px;
+}
+.page-footer{
+    bottom: 0px;
+    border-top: 1px solid grey;
+    background-color:rgb(78, 53, 4);
+    position: fixed;
+    min-height: 40px;
+    padding:20px;
+    min-width: 100vw;
 }

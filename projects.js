@@ -105,7 +105,7 @@ let buttonEventProject = (e)=>{
 let buttonClickEventForBio = ()=>{
     const myBio = `<div class="my-bio">
                         <p>My name is Yitbarek Gitore. I am recent computer sciece graduate from Tennessee state university with concentration in cyber security.<br>I always knew I was going to be web developer. But i have never worked as web developer for any company. Most of my jobs in the past including internships experience were in cyber security.
-                        My love for coding hasn\'t been new. I love handling everthing from front-end develpment(making site prettier) to back-end development to server management. <br>I enjoy learning new things and keep up with changing technologies and overcoming the challenges we have in our day today life through technology.  </p>
+                        My love for coding hasn\'t been new. I love handling everthing from front-end develpment(making site prettier) to back-end development to server management. I enjoy learning new things and keep up with changing technologies and overcoming the challenges we have in our day today life through technology.  </p>
                    </div>`;
     printToDom('bioPage', myBio);
 
