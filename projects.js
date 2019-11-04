@@ -108,8 +108,8 @@ let buttonClickEventForBio = ()=>{
                         My love for coding hasn\'t been new. I love handling everthing from front-end develpment(making site prettier) to back-end development to server management. I enjoy learning new things and keep up with changing technologies and overcoming the challenges we have in our day today life through technology.  </p>
                    </div>`;
     printToDom('bioPage', myBio);
-
 }
+document.getElementById('homePageImg').addEventListener('click', buttonClickEventForBio);
 document.getElementById('navToBio').addEventListener('click', buttonClickEventForBio);
 document.getElementById('navToProjects').addEventListener('click', buttonEventProject);
 document.getElementById('navToTechnologies').addEventListener('click', buttonEventTechnologies);

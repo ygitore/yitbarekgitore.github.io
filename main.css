@@ -5,18 +5,28 @@
     color: black;
 }
 body{
+    color: #fff;
     padding-bottom: 10px;
     position: relative;
     min-height: calc(100vh-109px);
+    background: rgba(177, 190, 199, 0.9);
+}
+.homePageImg{
+    width: 25px;
+    height: 22px;
 }
 #navLinks{
     display: flex;
     flex-grow: 1;
-    flex:row wrap;
+    flex-direction:row;
+    flex-wrap: wrap;
     list-style-type: none;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: rgb(12, 74, 116);
     padding:20px;
+}
+.bioList{
+    margin-left: 37%;
 }
 nav ul li a{
     text-align: center;
@@ -68,8 +78,8 @@ nav ul li a{
 }
 .my-bio{
     margin-top:20px;
-    margin-left:200px;
-    margin-right:250px;
+    margin-left:300px;
+    margin-right:300px;
     line-height: 1.5;
 }
 .project-title,.descritption,.technologies-used-in-this-proj{
