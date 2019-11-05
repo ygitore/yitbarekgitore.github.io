@@ -71,6 +71,24 @@ const projects = [{
                 available: true,
                 url: "https://github.com/yitbarekgitore/product-Card", 
                 githubUrl: "https://github.com/yitbarekgitore/product-Card"
+            },
+            {
+                title: "Solar System", 
+                screenshot: "./images/Solar_System.png", 
+                description: "This is the project that displays single or all planets from the list of planets. When hover over the planet name, planet image and description of planet displayed. When clicked on specific planet, that particular planet will visible and all other planets hidden. We can also search planet either by their name or description", 
+                technologiesUsed: "HTML, CSS, JavaScript, Version Control with Git and Github, bootsrap4, SASS, Jquery, ES6 Modules",
+                available: true,
+                url: "https://github.com/yitbarekgitore/solar-system", 
+                githubUrl: "https://github.com/yitbarekgitore/solar-system"
+            },
+            {
+                title: "Sandwich Maker", 
+                screenshot: "./images/Sandwich_Maker.png", 
+                description: "This is the project that allows users to choose the ingredients they need from the list of ingredients. After choosing the ingredients and hit enter key from keyboard, they will be able to see what choice they made. When Order Now button is clicked, it calculates and displays the total amount", 
+                technologiesUsed: "HTML, CSS, JavaScript, Version Control with Git and Github, bootsrap4, ES6 Modules",
+                available: true,
+                url: "https://github.com/yitbarekgitore/solar-system", 
+                githubUrl: "https://github.com/yitbarekgitore/solar-system"
             }
         ];
 
